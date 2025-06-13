@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>我的世界下载交流网站声明</title>
+  <title>我的世界资源站 - 声明</title>
   <style>
     :root {
       --primary-color: #2563eb;
-      --secondary-color: #a855f7;
       --bg-color: #f9fafb;
       --text-color: #1f2937;
-      --light-bg: #ffffff;
+      --card-bg: #ffffff;
       --border-radius: 1rem;
       --transition-speed: 0.3s;
     }
@@ -26,141 +25,60 @@
       background-color: var(--bg-color);
       color: var(--text-color);
       line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
 
     header {
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-      color: white;
-      padding: 2rem 1.5rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
     header h1 {
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 1.8rem;
+      color: var(--primary-color);
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
     }
 
-    .logo {
+    svg {
       width: 24px;
       height: 24px;
     }
 
-    nav {
-      display: flex;
-      overflow-x: auto;
-      border-bottom: 1px solid #e5e7eb;
-      margin: 1rem 0;
-    }
-
-    nav button {
-      flex-shrink: 0;
-      padding: 0.75rem 1rem;
+    header p {
       font-size: 1rem;
-      font-weight: 500;
-      border: none;
-      background: transparent;
-      cursor: pointer;
       color: #6b7280;
-      border-bottom: 2px solid transparent;
-      transition: var(--transition-speed);
+      margin-top: 0.5rem;
     }
 
-    nav button.active {
-      color: var(--primary-color);
-      border-color: var(--primary-color);
-    }
-
-    main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: var(--light-bg);
-      border-radius: var(--border-radius);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      animation: fadeInUp 0.4s ease-out;
-    }
-
-    h2 {
+    section h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
       color: var(--primary-color);
     }
 
-    p, li, td {
-      font-size: 1rem;
-    }
-
-    ul, ol {
-      margin-left: 1.5rem;
+    section p {
       margin-bottom: 1rem;
-    }
-
-    form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    input, textarea, button {
-      width: 100%;
-      padding: 0.75rem;
-      margin-top: 0.5rem;
-      border: 1px solid #d1d5db;
-      border-radius: 0.5rem;
       font-size: 1rem;
-      transition: var(--transition-speed);
-    }
-
-    input:focus,
-    textarea:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-    }
-
-    button {
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1d4ed8;
+      color: #374151;
     }
 
     footer {
       margin-top: 3rem;
-      padding: 1.5rem;
-      background: #ffffff;
       text-align: center;
-      color: #6b7280;
       font-size: 0.9rem;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      color: #9ca3af;
     }
 
     @media (max-width: 640px) {
@@ -168,108 +86,38 @@
         font-size: 1.5rem;
       }
 
-      nav {
-        font-size: 0.9rem;
-      }
-
-      nav button {
-        padding: 0.5rem 0.75rem;
+      section h2 {
+        font-size: 1.25rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>
-      <svg class="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 9H21V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3 9L12 4L21 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12 12V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      我的世界资源站 - 声明页
-    </h1>
-    <p>提供《Minecraft》相关资源与信息，仅供学习交流使用</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9H21V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3 9L12 4L21 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 12V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        我的世界资源站 - 声明页
+      </h1>
+      <p>提供《Minecraft》相关资源与信息，仅供学习交流使用</p>
+    </header>
 
-  <nav>
-    <button class="active" data-tab="disclaimer">免责声明</button>
-    <button data-tab="privacy">隐私政策</button>
-    <button data-tab="terms">服务条款</button>
-    <button data-tab="contact">联系我们</button>
-  </nav>
-
-  <main id="content">
-    <section id="disclaimer" class="tab-content active">
+    <section>
       <h2>免责声明</h2>
       <p>本网站提供的《Minecraft》（我的世界）相关资源均来自网络收集与用户分享，仅供个人学习和研究使用，不得用于任何商业用途。</p>
       <p>我们不保证所提供内容的合法性、安全性、准确性。下载及使用相关资源时，请遵守当地法律法规，并自行承担一切法律风险。</p>
       <p>所有资源版权归原作者所有，如涉及版权问题，请立即联系管理员处理。我们将及时删除侵权内容。</p>
     </section>
-
-    <section id="privacy" class="tab-content">
-      <h2>隐私政策</h2>
-      <p>我们非常重视您的隐私保护。在您访问或使用本网站的过程中，我们可能会收集以下信息：</p>
-      <ul>
-        <li>IP地址与访问日志</li>
-        <li>浏览器类型与设备信息</li>
-        <li>页面浏览数据与交互行为</li>
-      </ul>
-      <p>我们承诺不会向第三方出售您的个人信息。所有数据仅用于网站优化与安全防护。我们采用基本的安全措施来保护您的信息，但无法确保100%的数据安全。</p>
-      <p>通过继续使用本服务，即表示您已理解并同意本隐私政策的内容。</p>
-    </section>
-
-    <section id="terms" class="tab-content">
-      <h2>服务条款</h2>
-      <p>欢迎使用本网站！在使用前，请仔细阅读以下服务条款：</p>
-      <ol>
-        <li>您必须年满13岁才能使用本网站</li>
-        <li>禁止恶意爬虫、自动化脚本或大规模请求</li>
-        <li>禁止发布违法、侵权或不当内容</li>
-        <li>我们保留随时修改服务条款的权利</li>
-        <li>您有责任保管好自己的账号信息</li>
-      </ol>
-      <p>违反上述条款可能导致您的访问权限被限制或终止。我们保留在不事先通知的情况下移除内容或暂停服务的权利。</p>
-    </section>
-
-    <section id="contact" class="tab-content">
-      <h2>联系我们</h2>
-      <form>
-        <label for="name">姓名</label>
-        <input type="text" id="name" placeholder="请输入您的姓名" required />
-
-        <label for="email">邮箱</label>
-        <input type="email" id="email" placeholder="请输入您的邮箱" required />
-
-        <label for="message">留言</label>
-        <textarea id="message" rows="4" placeholder="请留下您的意见或建议"></textarea>
-
-        <button type="submit">提交反馈</button>
-      </form>
-    </section>
-  </main>
+  </div>
 
   <footer>
-    &copy; 2025 我的世界资源站 | 遵守相关法律法规 |
-    <a href="#">帮助中心</a> | 
-    <a href="#">意见反馈</a>
+    &copy; 2025 我的世界资源站 | 遵守相关法律法规
   </footer>
 
-  <script>
-    const tabs = document.querySelectorAll('nav button');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remove active from all
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => c.classList.remove('active'));
-
-        // Add active to clicked tab and corresponding content
-        tab.classList.add('active');
-        document.getElementById(tab.dataset.tab).classList.add('active');
-      });
-    });
-  </script>
 </body>
 </html>
